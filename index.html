@@ -13,13 +13,46 @@
     <section class="page-header">
       <h1 class="project-name">AppSecCali 2015: Marshalling Pickles</h1>
       <h2 class="project-tagline"></h2>
+      <a href="https://github.com/frohoff/appseccali-marshalling-pickles" class="btn">View on GitHub</a>
+      <a href="https://github.com/frohoff/appseccali-marshalling-pickles/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/frohoff/appseccali-marshalling-pickles/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <ul>
-<li><a href="https://www.youtube.com/watch?v=KSA7vUkXGSg">Talk Video</a></li>
-<li><a href="http://www.slideshare.net/frohoff1/appseccali-2015-marshalling-pickles">Talk Slides</a></li>
-<li><a href="https://github.com/frohoff/ysoserial">Tool (ysoserial)</a></li>
+      <h1>
+<a id="talk" class="anchor" href="#talk" aria-hidden="true"><span class="octicon octicon-link"></span></a>Talk</h1>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KSA7vUkXGSg">Video</a></li>
+<li><a href="http://www.slideshare.net/frohoff1/appseccali-2015-marshalling-pickles">Slides</a></li>
+</ul>
+
+<blockquote>
+<p>Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual
+data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from
+untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and
+serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code
+execution. We will also cover some strategies to protect applications from these types of attacks.</p>
+</blockquote>
+
+<h1>
+<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tools</h1>
+
+<ul>
+<li><a href="https://github.com/frohoff/ysoserial">ysoserial</a></li>
+</ul>
+
+<blockquote>
+<p>ysoserial is a collection of utilities and property-oriented programming "gadget chains" discovered in common java libraries 
+that can, under the right conditions, exploit Java applications performing unsafe deserialization of objects. The main 
+driver program takes a user-specified command and wraps it in the user-specified gadget chain, then serializes these objects 
+to stdout. When an application with the required gadgets on the classpath unsafely deserializes this data, the chain will 
+automatically be invoked and cause the command to be executed on the application host.</p>
+</blockquote>
+
+<ul>
+<li><a href="https://bitbucket.org/gebl/viewstatemesser">ViewStateMesser</a></li>
+<li><a href="https://github.com/frohoff/rails_exploits">ruby_exploits</a></li>
 </ul>
 
       <footer class="site-footer">
